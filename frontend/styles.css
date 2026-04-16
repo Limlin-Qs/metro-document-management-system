@@ -1,0 +1,86 @@
+.category-item {
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 14px;
+  color: #4B5563;
+}
+
+.category-item:hover {
+  background-color: #F3F4F6;
+}
+
+.category-item.active {
+  background-color: #3B82F6;
+  color: white;
+}
+
+.document-card {
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 16px;
+  transition: all 0.2s;
+}
+
+.document-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.file-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 24px;
+}
+
+.file-pdf {
+  background-color: #FEE2E2;
+  color: #DC2626;
+}
+
+.file-word {
+  background-color: #DBEAFE;
+  color: #2563EB;
+}
+
+.file-excel {
+  background-color: #D1FAE5;
+  color: #059669;
+}
+
+.file-image {
+  background-color: #FDE68A;
+  color: #D97706;
+}
+
+.file-other {
+  background-color: #E5E7EB;
+  color: #6B7280;
+}
+
+#dropZone.dragover {
+  border-color: #3B82F6;
+  background-color: #EFF6FF;
+}
+
+.loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
